@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container{
+
+            height: 100vh;
+            background-color: black;
+        }
+
+        .upper{
+
+            height: 50%;
+            display: flex;
+        }
+
+        .mid{
+
+            height: 25%;
+            background:linear-gradient(45deg,#e293f9,#caa8fa,#f584f5);
+            margin: 5px;
+        }
+
+        .lower{
+
+            height: 25%;
+            display: flex;
+        }
+
+        .inner-lower{
+
+            width: 20%;
+            height: 100%;
+            background:linear-gradient(45deg,#fecbad,#fa8fb1);
+            margin: 5px;
+        }
+
+        .upper-left{
+
+            width: 70%;
+            height: 99%;
+            background:linear-gradient(45deg,#e293f9,#caa8fa,#f584f5);
+            margin: 5px;
+        }
+
+        .upper-right{
+
+            width: 30%;
+        }
+
+        .right-upper{
+
+            height: 49%;
+            background: linear-gradient(45deg,#72c5f7,#76e3e3);
+            margin: 5px;
+        }
+        .right-lower{
+            height: 49%;
+            background: linear-gradient(45deg,#72c5f7,#76e3e3);
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+      <div class="upper">
+        <div class="upper-left"></div>
+        <div class="upper-right">
+            <div class="right-upper"></div>
+            <div class="right-lower"></div>
+        </div>
+      </div>
+      <div class="mid"></div>
+      <div class="lower">
+        <div class="inner-lower"></div>
+        <div class="inner-lower"></div>
+        <div class="inner-lower"></div>
+        <div class="inner-lower"></div>
+        <div class="inner-lower"></div>
+      </div>
+    </div>
+    
+</body>
+</html>
