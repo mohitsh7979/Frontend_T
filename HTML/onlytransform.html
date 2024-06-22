@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            animation: box 400ms infinite linear;
+            /* margin: 5px; */
+            
+
+        }
+
+        @keyframes box{
+
+            from{
+
+                transform: rotate(0deg);
+            }
+            to{
+
+                transform: rotate(360deg);
+            }
+            
+        }
+
+        .container:nth-child(2n){
+
+         
+            animation: box1 400ms infinite linear alternate;
+        }
+
+        @keyframes box1 {
+
+            from{
+
+                transform: translateX(0px);
+            }
+            to{
+
+                transform: translateX(500px);
+
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+
+</body>
+</html>

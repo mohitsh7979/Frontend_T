@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="https://images.unsplash.com/photo-1719032168861-994a74306944?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      } */
+
+      .container {
+        height: 93vh;
+        width: 50%;
+        /* background-color: black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 500px;
+        animation: box 4s infinite linear;
+        border: 2px solid black;
+        /* box-shadow: 0px 0px 100px rgb(255, 111, 0); */
+      }
+
+      .box {
+        height: 250px;
+        width: 250px;
+        background-color:red;
+        position: absolute;
+        border-radius: 0px 400px 0px 400px;
+        box-shadow: 2px 2px 100px red;
+      }
+
+      .box:nth-child(1) {
+        left: 117px;
+        transform: rotate(-45deg);
+    }
+    .box:nth-child(2) {
+        top: 107px;
+        transform: rotate(45deg);
+      }
+      .box:nth-child(3) {
+        right: 117px;
+      
+        transform: rotate(-45deg);
+      }
+      .box:nth-child(4) {
+        bottom: 105px;
+        transform: rotate(45deg);
+        
+      }
+
+      @keyframes box {
+        from{
+            
+            transform: rotate(0deg);
+            left: -1000px;
+            top: 0px;
+           
+        }
+        to{
+
+            transform: rotate(360deg);
+            left: 1500px;
+            top: 0px;
+            
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <i class="fa-solid fa-house"></i>
+      </div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
+
+
